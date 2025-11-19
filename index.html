@@ -284,6 +284,19 @@ label, select, p {
     window.addEventListener("DOMContentLoaded", () => {
       categorySelect.value = defaultCategory;
       renderOptions(defaultCategory);
+
+      // prior = MOG8
+      const priorRadio = document.querySelector('input[name="prior"][value="MOG8"]');
+      if (priorRadio) priorRadio.checked = true;
+
+      // objective = Transformative
+      const objRadio = document.querySelector('input[name="objective"][value="Transformative"]');
+      if (objRadio) objRadio.checked = true;
+
+      // GAN = true
+      const ganCheckbox = document.getElementById("gan");
+      if (ganCheckbox) ganCheckbox.checked = true;
+
       loadAudioPlayers();
     });
 
