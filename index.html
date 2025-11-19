@@ -177,7 +177,7 @@ label, select, p {
           { type: "checkbox", label: "GAN", id: "gan" }
         ],
         getFiles: opts => {
-          let base = "./audio/gen/neural/";
+          let base = "./audio/gen/neural/neural";
           if (opts.requantize) base += "_requantized";
           if (opts.gan) base += "_gan";
           return [`${base}_1.mp3`, `${base}_2.mp3`, `${base}_3.mp3`, `${base}_4.mp3`];
